@@ -61,7 +61,7 @@ variable "tfc_address" {
 variable "number_of_agents" {
   type        = number
   description = "Number of cloud agents to run per instance."
-  default     = 1
+  default     = 2
 }
 
 variable "assign_public_ip" {
