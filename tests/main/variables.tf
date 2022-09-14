@@ -15,7 +15,7 @@ variable "common_tags" {
 variable "region" {
   type        = string
   description = "The AWS Region to deploy resources into."
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 #--------------------------------------------------------------------------------------------------
