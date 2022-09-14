@@ -15,7 +15,7 @@ variable "common_tags" {
 variable "region" {
   type        = string
   description = "The AWS Region to deploy resources into."
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 #--------------------------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ variable "tfc_agent_name" {
 variable "tfc_agent_version" {
   type        = string
   description = "Version of tfc-agent to run."
-  default     = "1.2.0"
+  default     = "1.3.0"
 }
 
 variable "tfc_address" {
