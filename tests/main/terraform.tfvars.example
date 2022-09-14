@@ -1,0 +1,24 @@
+# --- Common --- #
+friendly_name_prefix = "agents"
+region               = "us-east-1"
+common_tags = {
+  "App"       = "TFE-Agents"
+  "Env"       = "test"
+  "Terraform" = "cli"
+  "Owner"     = "Engineer"
+}
+
+# --- Networking --- #
+vpc_id     = "vpc-01234567890abc"
+subnet_ids = ["subnet-123456789abc"]
+
+# --- ECS Agents --- #
+tfc_agent_token  = "abcdefg12345678token"
+tfc_agent_name   = "ecs-tfe-agents"
+tfc_address      = "https://app.terraform.io"
+number_of_agents = "1"
+agent_image      = "hashicorp/tfc-agent:latest"
+assign_public_ip = true
+enable_logs      = true
+cpu              = 1024
+memory           = 2048
